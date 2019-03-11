@@ -20,6 +20,5 @@ generalAreaEl.addEventListener('submit', (evt) => {
 
 
     areaOutEl.textContent = areaInEl.value;
-
 });
 
