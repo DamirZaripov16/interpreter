@@ -23,7 +23,7 @@ function TatLatToTatCyr(id){
 }
 
 function translit(){
-    $("[name=result]").val(TatCyrToTatLat($("[name=translit]").val()));
+    $("[id=result]").val(TatCyrToTatLat($("[id=translit]").val()));
 }
 
 // Outer Functional
@@ -37,16 +37,15 @@ generalAreaEl.addEventListener('submit', (evt) => {
 
     areaInEl.addEventListener('input', (evt) => {
         areaInEl.value = '';
-        if (areaInEl.value === '') {
-            areaInEl.textContent = 'Введите текст на татарском';
-        }
+        // if (areaInEl.value === '') {
+        //     areaInEl.textContent = 'Введите текст на татарском';
+        // }
     });
 
     translateEl.addEventListener('click', (evt) => {
         evt.preventDefault();
 
     });
-
 
     resultEl.textContent = translit();
 });
