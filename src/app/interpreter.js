@@ -16,7 +16,7 @@ function Translite() {
             'з': 'z', 'и': 'i', 'й': 'y', 'к': 'q', 'л': 'l', 'м': 'm', 'н': 'n', 'ң': 'ñ',
             'о': 'o', 'ө': 'ö', 'п': 'p', 'р': 'r', 'с': 's', 'т': 't', 'у': 'u', 'ү': 'ü', 'ф': 'f', 'х': 'h', 'h': 'h',
             'ц': 'ç', 'ч': 'ç', 'ш': 'ş', 'щ': 'ş', 'ъ': "'",
-            'ы': 'i', 'ь': "'", 'э': 'e', 'ю': 'yu', 'я': 'ya'
+            'ы': 'i', 'ь': "'", 'э': 'e', 'ю': 'yu', 'я': 'ya', ',':','
         };
 
 
@@ -28,9 +28,9 @@ function Translite() {
 
 
         for (let i = 0; i < str.length; i++) {
-            if (/[а-яёәҗңөүh]/.test(str.charAt(i))) {
+            if (/[а-яёәҗңөүh,]/.test(str.charAt(i))) {
                 link += transl[str.charAt(i)];
-            } else if (/[a-zäjühççşşi0-9]/.test(str.charAt(i))) {
+            } else if (/[a-zäjühççşşi0-9,]/.test(str.charAt(i))) {
                 link += str.charAt(i);
             } else if (link.slice(-1) !== space)  {
                  link += space;
