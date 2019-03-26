@@ -6,14 +6,33 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="app/style.css">
 </head>
 <body>
 
-<textarea id="transliteTatCyr" placeholder="Татарча"></textarea>
-<button id="transliteRun">Тат > Tat</button>
-<textarea id="transliteTatLat" placeholder="Tatarça" readonly></textarea>
-<button id="transliteClear">Erase</button>
-
+<div class="tabs-container">
+    <ul class="tabs">
+        <li class="active">
+            <a href="">1</a>
+        </li>
+        <li>
+            <a href="">2</a>
+        </li>
+    </ul>
+    <div class="tabs-content">
+        <div class="tabs-panel active" data-index="0">
+            <textarea id="transliteTatCyr" placeholder="Татарча"></textarea>
+            <button id="transliteRun">Тат > Tat</button>
+            <textarea id="transliteTatLat" placeholder="Tatarça" readonly></textarea>
+            <button id="transliteClear">Erase</button>
+        </div>
+        <div class="tabs-panel" data-index="1">
+            <!-- content here -->
+        </div>
+    </div>
+</div>
 
 <script src="app/interpreter.js"></script>
 </body>
