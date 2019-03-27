@@ -1,4 +1,4 @@
-//Tabs
+//Tabs(creating)
 
 const tabLinks = document.querySelectorAll(".tabs a");
 const tabPanels = document.querySelectorAll(".tabs-panel");
@@ -19,7 +19,7 @@ for(let el of tabLinks) {
     });
 }
 
-//General
+//Tab 1
 
 function Translite() {
     let TatLatField = document.getElementById("transliteTatLat"),
@@ -165,3 +165,11 @@ function Translite() {
 }
 
 Translite();
+
+
+//Tab 2
+
+document.getElementById('searchForm').onsubmit = function() {
+    window.location = 'http://www.tatpoisk.net/dict/' + document.getElementById('test').value;
+    return false;
+};
