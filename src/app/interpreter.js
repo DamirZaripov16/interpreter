@@ -1,9 +1,11 @@
+import {TatCyrField} from "./storage.js";
+
 //Tabs(creating)
 
 const tabLinks = document.querySelectorAll(".tabs a");
 const tabPanels = document.querySelectorAll(".tabs-panel");
 
-for(let el of tabLinks) {
+for (let el of tabLinks) {
     el.addEventListener("click", e => {
         e.preventDefault();
 
@@ -21,7 +23,7 @@ for(let el of tabLinks) {
 
 //Tab 1
 
-function Translite() {
+export function Translite() {
     let TatLatField = document.getElementById("transliteTatLat"),
         TatCyrField = document.getElementById("transliteTatCyr"),
         butRun = document.getElementById("transliteRun"),
@@ -164,12 +166,12 @@ function Translite() {
     }
 }
 
-Translite();
+Translite(TatCyrField);
 
 
 //Tab 2
 
-document.getElementById('searchForm').onsubmit = function() {
+document.getElementById('searchForm').onsubmit = function () {
     window.location = 'http://www.tatpoisk.net/dict/' + document.getElementById('test').value;
     return false;
 };
