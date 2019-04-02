@@ -1,3 +1,5 @@
+/* Tabs */
+
 .tabs-container {
     max-width: 1000px;
     margin: 50px auto;
@@ -43,4 +45,39 @@
 
 .tabs-panel.active {
     display: block;
+}
+
+/* Content */
+
+.translite {
+    width: 300px;
+    height: 300px;
+}
+
+#transliteTatCyr{
+    float: left;
+}
+
+#transliteTatLat{
+    float: right;
+}
+
+#runWrapper{
+    float: left;
+    margin-left: 4%;
+    margin-top: 13%;
+}
+
+#eraseWrapper{
+    float: left;
+    margin-left: 6%;
+    margin-top: 13%;
+}
+
+#searchWrapper{
+    margin-left: 35%;
+}
+
+#test{
+    margin-right: 3%;
 }
