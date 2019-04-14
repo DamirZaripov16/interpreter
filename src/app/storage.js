@@ -5,4 +5,3 @@ TatCyrField.value = sessionStorage["transliteTatCyr"] || "";
 Translite.click = function(){
     sessionStorage["transliteTatCyr"]= TatCyrField.value;
 };
-//todo: не работает sessionStorage
