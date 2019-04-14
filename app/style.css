@@ -1,8 +1,24 @@
+body{
+    font-family: "Courier New";
+}
+
+
+#titleTranslit{
+    color: #118399;
+    margin-top: 2%;
+    text-align: center;
+}
+
+#example{
+    text-align: center;
+    margin-bottom: 2%;
+    color: gray;
+}
 /* Tabs */
 
 .tabs-container {
     max-width: 1000px;
-    margin: 50px auto;
+    margin: auto;
     padding: 25px;
 }
 
@@ -56,21 +72,35 @@
 
 #transliteTatCyr{
     float: left;
+    resize: none;
+    box-shadow: 2px 2px 2px 0 #118399;
+    -webkit-appearance: none;
+    border-radius: 5%;
+    padding-right: 2%;
+    padding-left: 2%;
+    outline: none;
 }
 
 #transliteTatLat{
     float: right;
+    resize: none;
+    box-shadow: 2px 2px 2px 0 #118399;
+    -webkit-appearance: none;
+    border-radius: 5%;
+    padding-right: 2%;
+    padding-left: 2%;
+    outline: none;
 }
 
 #runWrapper{
     float: left;
-    margin-left: 4%;
+    margin-left: 3%;
     margin-top: 13%;
 }
 
 #eraseWrapper{
     float: left;
-    margin-left: 6%;
+    margin-left: 5%;
     margin-top: 13%;
 }
 
@@ -80,4 +110,5 @@
 
 #test{
     margin-right: 3%;
+    width: 55%;
 }

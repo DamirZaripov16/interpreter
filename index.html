@@ -12,10 +12,14 @@
 </head>
 <body>
 
+<div id="titleTranslit">
+    <h1>TransliT</h1>
+</div>
+
 <div class="tabs-container">
     <ul class="tabs">
         <li class="active">
-            <a href="">Переводчик</a>
+            <a href="">Транслитер</a>
         </li>
         <li>
             <a href="">Словарь</a>
@@ -23,21 +27,24 @@
     </ul>
     <div class="tabs-content">
         <div class="tabs-panel active" data-index="0">
-            <textarea id="transliteTatCyr" class="translite" placeholder="Татарча"></textarea>
-            <div id="runWrapper">
-                <button id="transliteRun" class="button">Перевести</button>
+            <div id="example">
+                <h6>Введите текст на татарском, например:
+                    <h6>"Алла бозавы" гыйбарәсенең татарча мәгънәсе - юри әкрен кыймылдаучы кеше.</h6></h6>
             </div>
-            <textarea id="transliteTatLat" class="translite" placeholder="Tatarça" readonly></textarea>
+            <textarea id="transliteTatCyr" class="translite"  placeholder="Татарча" spellcheck="false"></textarea>
+            <div id="runWrapper">
+                <button id="transliteRun" type="button" class="btn btn-info">Транслит</button>
+            </div>
+            <textarea id="transliteTatLat" class="translite" placeholder="Tatarça" spellcheck="false" readonly></textarea>
             <div id="eraseWrapper">
-                <button id="transliteClear" class="button">Очистить</button>
+                <button id="transliteClear" type="button" class="btn btn-danger">Очистить</button>
             </div>
         </div>
         <div class="tabs-panel" data-index="1">
             <div id="searchWrapper">
                 <label for="searchForm">Введите слово на русском/татарском</label>
                 <form id="searchForm"  class="search2" method="post" action="http://google.com"/>
-                <input class="search2" id="test" type="text" name="search" required/>
-                <button>Search</button>
+                <input class="form-control" id="test" type="text" name="search" placeholder="Tatpoisk.net" required/>
             </div>
 
         </div>
